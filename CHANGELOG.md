@@ -6,12 +6,18 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [3.0.1] - 2026-11-23
+
 ### Changed
 - **pi-tui 1.6 compatibility.** pi-tui 1.6 types `Component.render()` as
   `readonly string[]` and `Container` returns its cached array while its
   children are unchanged. `VerdictLine` only forwards `Text`'s lines and
   never edits a render result in place, so it keeps the cached array and its
-  return type is now `readonly string[]`.
+  return type is now `readonly string[]`. No behavior change on earlier pi
+  releases.
+- **Renamed GitHub account.** Repository, package and schema URLs now point at
+  `jeffrey-deng/pi-permission-modes` instead of `Jeffrey-deng/…`; GitHub
+  redirects the old paths, so existing installs keep working.
 
 ## [3.0.0]
 
