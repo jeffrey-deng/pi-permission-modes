@@ -300,7 +300,7 @@ Please report security issues **by email to the maintainer** (address in
 [`package.json`](package.json)) - GitHub issues are public, so don't open one
 with exploit details. Include the mode, platform, and a minimal reproduction.
 Non-sensitive hardening ideas are welcome as regular
-[issues](https://github.com/Jeffrey-deng/pi-permission-modes/issues).
+[issues](https://github.com/jeffrey-deng/pi-permission-modes/issues).
 
 ## Acknowledgements
 

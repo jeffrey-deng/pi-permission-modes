@@ -5,13 +5,13 @@
   "description": "Switchable, user-definable permission modes for the pi coding agent. Each mode pairs an OS-level sandbox (bubblewrap, sandbox-exec, native Windows) with an allow / ask / deny policy for every tool. Default, Plan Mode, Build and YOLO ship; retune them or add your own. Live network prompts, plan approval, background shells with port exposure.",
   "license": "MIT",
   "author": "Jeffrey Deng <jeffrey.c.deng@gmail.com>",
-  "homepage": "https://github.com/Jeffrey-deng/pi-permission-modes#readme",
+  "homepage": "https://github.com/jeffrey-deng/pi-permission-modes#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jeffrey-deng/pi-permission-modes.git"
+    "url": "git+https://github.com/jeffrey-deng/pi-permission-modes.git"
   },
   "bugs": {
-    "url": "https://github.com/Jeffrey-deng/pi-permission-modes/issues"
+    "url": "https://github.com/jeffrey-deng/pi-permission-modes/issues"
   },
   "keywords": [
     "pi",

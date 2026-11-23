@@ -7,7 +7,7 @@
 > - **Allow Unsandboxed Once** - run one approved bash command outside the sandbox without granting it for the session.
 > - **Deny for Reason** - deny a permission request with your own sentence and pass it back to the model.
 
-[![CI](https://github.com/Jeffrey-deng/pi-permission-modes/actions/workflows/ci.yml/badge.svg)](https://github.com/Jeffrey-deng/pi-permission-modes/actions/workflows/ci.yml)
+[![CI](https://github.com/jeffrey-deng/pi-permission-modes/actions/workflows/ci.yml/badge.svg)](https://github.com/jeffrey-deng/pi-permission-modes/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Switchable, **user-definable** permission modes for the [pi](https://pi.dev)
@@ -23,7 +23,7 @@ boundaries so it works within them, and every blocked step points at the
 documentation that explains it. **Linux** (including WSL2), **macOS** and
 **Windows** are supported.
 
-![pi in Build mode asking before a read outside the project: Allow once, Allow for session, Deny, Deny and block; the footer shows the sandboxed mode, the filtered network and two background shells](https://raw.githubusercontent.com/Jeffrey-deng/pi-permission-modes/main/misc/screenshot-pi-permission-modes.png)
+![pi in Build mode asking before a read outside the project: Allow once, Allow for session, Deny, Deny and block; the footer shows the sandboxed mode, the filtered network and two background shells](https://raw.githubusercontent.com/jeffrey-deng/pi-permission-modes/main/misc/screenshot-pi-permission-modes.png)
 
 The complete reference lives in [`docs/`](docs/index.md) and ships with the
 extension, so the agent can read it too. [SECURITY.md](SECURITY.md) has the
@@ -38,7 +38,7 @@ threat model, [CHANGELOG.md](CHANGELOG.md) the releases, and
 ~~`pi install npm:pi-permission-modes`~~
 
 ```bash
-pi install git:github.com/Jeffrey-deng/pi-permission-modes
+pi install git:github.com/jeffrey-deng/pi-permission-modes
 ```
 
 On **Linux** (including **WSL2**) the sandbox also needs three system packages
@@ -66,9 +66,9 @@ provided by the host. Node 22.12 or newer is required (pi itself needs
 
 ### Other install methods
 
-- `pi install git:github.com/Jeffrey-deng/pi-permission-modes` - straight from GitHub (the latest release)
+- `pi install git:github.com/jeffrey-deng/pi-permission-modes` - straight from GitHub (the latest release)
 - ~~`pi install npm:pi-permission-modes@2.7.0`~~ - pin a version (`pi update --extensions` won't advance it); npm publishing is pending
-- `pi install git:github.com/Jeffrey-deng/pi-permission-modes@dev` - the development branch; may break between releases
+- `pi install git:github.com/jeffrey-deng/pi-permission-modes@dev` - the development branch; may break between releases
 - ~~`pi install -l npm:pi-permission-modes`~~ - project-local install (`.pi/npm/`, shareable with your team); npm publishing is pending
 - `pi update --extensions` - pull the latest release, whichever way you installed
 
@@ -199,7 +199,7 @@ Build its own network allowlist and asks before every `rm`:
 
 ```jsonc
 {
-  "$schema": "https://raw.githubusercontent.com/Jeffrey-deng/pi-permission-modes/main/schemas/permission-mode.schema.json",
+  "$schema": "https://raw.githubusercontent.com/jeffrey-deng/pi-permission-modes/main/schemas/permission-mode.schema.json",
   "modes": {
     "build": {
       "sandbox": { "network": { "allowedDomains": ["github.com", "*.github.com", "registry.npmjs.org"] } },
@@ -233,5 +233,5 @@ and the outdated-default warnings: [docs/configuration.md](docs/configuration.md
 - Temporarily: launch pi with `--no-extensions` (disables all), or `--no-sandbox`
   to keep the modes but drop OS sandboxing.
 - Permanently: `pi remove npm:pi-permission-modes` (or
-  `git:github.com/Jeffrey-deng/pi-permission-modes`, matching how you installed
+  `git:github.com/jeffrey-deng/pi-permission-modes`, matching how you installed
   it) - or remove the entry from your pi settings.

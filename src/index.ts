@@ -41,7 +41,7 @@
  *   auto/           the Auto classifier: verdict.ts (pure), precheck.ts, classifier.ts (the model call)
  *
  * Install (see README.md):
- *   pi install git:github.com/Jeffrey-deng/pi-permission-modes
+ *   pi install git:github.com/jeffrey-deng/pi-permission-modes
  *   Linux also needs: bubblewrap, socat, ripgrep
  */
 

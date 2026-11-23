@@ -11,14 +11,14 @@ Thanks for your interest in improving `permission-mode`!
 To run the development version yourself:
 
 ```bash
-pi install git:github.com/Jeffrey-deng/pi-permission-modes@dev
+pi install git:github.com/jeffrey-deng/pi-permission-modes@dev
 pi update --extensions   # later: pull the latest dev commits
 ```
 
 ## Dev setup
 
 ```bash
-git clone -b dev https://github.com/Jeffrey-deng/pi-permission-modes.git
+git clone -b dev https://github.com/jeffrey-deng/pi-permission-modes.git
 cd pi-permission-modes
 npm install            # installs @anthropic-ai/sandbox-runtime + dev tooling
 ```
