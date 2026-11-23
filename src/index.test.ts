@@ -44,7 +44,7 @@ const skip = setupExtension ? false : "pi SDK not installed (run npm install)";
 type Handler = (event: unknown, ctx: unknown) => Promise<unknown> | unknown;
 
 /** What the verdict entry renderer returns: a pi-tui component that also toggles on a click. */
-type VerdictComponent = { render(width: number): string[]; handleMouse(event: { type: string; button?: string }): { handled: true } | undefined };
+type VerdictComponent = { render(width: number): readonly string[]; handleMouse(event: { type: string; button?: string }): { handled: true } | undefined };
 
 class FakePi {
   flags = new Map<string, unknown>();

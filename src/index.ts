@@ -752,7 +752,10 @@ export default async function (pi: ExtensionAPI) {
       this.expanded = expanded;
       this.text = new Text(build(expanded), 0, 0);
     }
-    render(width: number): string[] {
+    // pi-tui 1.6 returns the component's cached line array and types it readonly
+    // (Container hands back the same array until its children change). We only
+    // forward Text's lines, never edit them in place, so `readonly` is enough.
+    render(width: number): readonly string[] {
       return this.text.render(width);
     }
     invalidate(): void {

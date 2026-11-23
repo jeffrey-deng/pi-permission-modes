@@ -1,6 +1,6 @@
 ---
 name: upstream-sync
-description: Manually synchronize useful changes from the original wynainfo/pi-permission-modes upstream into this fork, using the local sync/dev branch and one squashed "chore: sync upstream changes" commit on dev. Use only when the user explicitly asks to sync upstream or inspect and import an upstream change. sync/dev is local and must never be pushed.
+description: "Manually synchronize useful changes from the original wynainfo/pi-permission-modes upstream into this fork, using the local sync/dev branch and one squashed `chore: sync upstream changes` commit on dev. Use only when the user explicitly asks to sync upstream or inspect and import an upstream change. sync/dev is local and must never be pushed."
 disable-model-invocation: true
 ---
 
